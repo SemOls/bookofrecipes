@@ -1,101 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <title>Hello World!</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-    <meta
-      property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Recipes </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corinthia:wght@700&family=Dancing+Script:wght@700&family=Heebo:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400&family=Roboto:wght@500;700&family=Shizuru&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
 
-    <!-- The wrapper and content divs set margins and positioning -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
+<body>
+  <div class="heading">
+    <h1>Коллекции рецептов на любой вкус</h1>
+</div>
+<div class="input">
+<input type="text" id="search" placeholder="поиск по рецептам...">
+</div>
 
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <!-- Instructions on using this project -->
-        <div class="instructions">
-          <h2>
-            Using this project
-          </h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out README.md in the editor for
-            more info and next steps you can take!
-          </p>
-          <!-- ADD BUTTON HERE -->
-          
-          <!-- Once you've added the button from the readme, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+    <div class="top album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/1.jpg?v=1645977497248 alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Банановые панкейки</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"> <a id="b" href="https://www.iamcook.ru/showrecipe/5318" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 186 кКал  20 мин. </button>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/2.jpg?v=1645977501041" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Восточные гренки</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/2959" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 272 кКал  20 мин. </button>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/3.jpg?v=1645977505051" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Запеканка из цветной капусты и курицы</p>
+                                   <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/3511" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 127 кКал  35 мин. </button>
+                    </div>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/4.jpg?v=1645977508710" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Пицца за 10 минут на сковороде</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/5535" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 229 кКал  10 мин. </button>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/5.jpg?v=1645977512527" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Творожная запеканка диетическая</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/2735" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 159 кКал  1 ч 10 мин. </button>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/6.jpg?v=1645977517768" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Творожники на сковороде</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/5774" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 285 кКал  20 мин. </button>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/7.jpg?v=1645977527043" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Классические оладьи на молоке</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/14093" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 326 кКал  30 мин. </button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/8.jpg?v=1645977532192" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Запеканка из цветной капусты с ветчиной</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/1744" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 186 кКал  20 мин. </button>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/9.jpg?v=1645977536794" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Макароны, запечённые с сыром в духовке</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/8328">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 231 кКал  1 ч. </button>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/10.jpg?v=1645977541720" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Цветная капуста с яйцом и сыром</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/5048" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 95 кКал  40 мин. </button>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/11.jpg?v=1645977547005" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Яйцо в хлебе в духовке</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/13286" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 212 кКал  25 мин. </button>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://cdn.glitch.global/80764b89-ce0a-4292-91ee-e286899aef10/12.jpg?v=1645977551204" alt="">
+    
+                <div class="card-body">
+                  <p id="name" class="card-text">Творожная запеканка без муки</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="b" href="https://www.iamcook.ru/showrecipe/6306" target="_blank">Посмотреть</a> </button>
+                      <button type="button" class="btn btn-sm btn-success"> 207 кКал  1 ч. </button>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+      
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      
+    <script src="script.js"></script>
+</body>
 </html>
