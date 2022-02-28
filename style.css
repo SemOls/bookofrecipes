@@ -1,7 +1,8 @@
 body {
-    background-color: azure;
+    background-color: #d6e6f2;
   }  
-  .top {background-color: #d6e6f2;}
+ #top {background-color: #d6e6f2;
+padding: 30px;}
 
 .heading {
     margin-top: 20px;
